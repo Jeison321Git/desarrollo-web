@@ -1,0 +1,75 @@
+@import url(https://fonts.google.com);
+:root{
+    --lg-font: "Kaisei Tokumin", serif;
+    --sm-font: "Poppins", sans-serif;
+    --blue: #2e10db;
+}
+/* Mode Dark, light */
+body{
+    font-family: var(--sm-font);
+    background-color: #ffffff; /* Modo día: fondo blanco */
+    color: #000000; /* Modo día: texto negro */
+}
+  
+  body.night-mode {
+    background-color: #111111; /* Modo noche: fondo negro */
+    color: #ffffff; /* Modo noche: texto blanco */
+  }
+  
+/* button */
+.bg-primary{
+    box-shadow: var(--blue)!important;
+}
+
+/* navbar */
+.navbar {
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lgl-font);
+}
+.nav-link:hover{
+    color: var(--blue)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+.frase{
+    text-align: center;
+}
+
+/* Titulo */
+.title h2 ::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--blue);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.marca{
+    align-items: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+a{
+    color:#000 ;
+    text-decoration: none;
+    font-size: 17px;
+}
+p{
+    font-size: 17px;
+}
+a:hover{
+    color: blue !important;
+}
+i{
+    font-size: 25px;
+}
